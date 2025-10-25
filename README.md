@@ -19,6 +19,9 @@ This component mimics traditional mechanical counters commonly found in industri
 
 ## Design
 
+<img width="956" height="499" alt="Screenshot 2025-10-25 at 11 18 44 AM" src="https://github.com/user-attachments/assets/0a6685cc-34e4-4470-9247-5392b8ae317f" />
+
+
 The counter picker separates visual representation of:
 - **Main Digits (White):** Primary measurement values
 - **Fractional Digits (Red):** Sub-unit or precision measurements
