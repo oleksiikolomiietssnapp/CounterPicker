@@ -59,3 +59,9 @@ CounterView(
     maxFraction: 3
 )
 ```
+
+## License
+
+MIT License © 2025 Oleksii Kolomiiets
+
+See LICENSE file for details.
