@@ -25,6 +25,24 @@ A scrollable wheel picker that mimics mechanical counter displays. Features sepa
 
 Each digit column displays three rows (previous, current, next) creating a scroll-wheel effect. The main digits appear in dark text, the fractional digit in red, with a comma separator between them. Colors adapt to light/dark mode automatically.
 
+## Installation
+
+### Swift Package Manager
+
+Add CounterPicker to your project via SPM:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/oleksiikolomiietssnapp/CounterPicker.git", from: "1.0.0")
+]
+```
+
+Or in Xcode: File → Add Packages → Enter repository URL.
+
+**Requirements:**
+- iOS 17.0+
+- macOS 14.0+ (for testing)
+
 ## Usage
 
 **Basic:**
