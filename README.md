@@ -4,7 +4,7 @@ A custom SwiftUI component that replicates the behavior of mechanical counters, 
 
 ## Overview
 
-This component mimics traditional mechanical counters commonly found in industrial equipment, meter readers, and measurement devices. It displays values with distinct visual separation between main digits (displayed in white) and fractional digits (displayed in red).
+A scrollable wheel picker that mimics mechanical counter displays. Features separate main digits and a red fractional digit with a decimal separator, all displayed with a scroll-wheel interaction where each digit column shows the previous, current, and next values.
 
 ## Configuration
 
@@ -19,8 +19,25 @@ This component mimics traditional mechanical counters commonly found in industri
 
 ## Design
 
-The counter picker separates visual representation of:
-- **Main Digits (White):** Primary measurement values
-- **Fractional Digits (Red):** Sub-unit or precision measurements
+| Light Mode | Dark Mode |
+|---|---|
+| ![Light Mode](.screenshots/light.png) | ![Dark Mode](.screenshots/dark.png) |
 
-This design follows real-world mechanical counter conventions where the fractional part is often color-coded for quick visual distinction.
+Each digit column displays three rows (previous, current, next) creating a scroll-wheel effect. The main digits appear in dark text, the fractional digit in red, with a comma separator between them. Colors adapt to light/dark mode automatically.
+
+## Usage
+
+**Basic:**
+```swift
+@State var reading: Double = 0
+CounterView(reading: $reading)
+```
+
+**Custom:**
+```swift
+CounterView(
+    reading: $reading,
+    maxWhole: 7,
+    maxFraction: 3
+)
+```
