@@ -62,4 +62,4 @@ CounterView(
 
 ## License
 
-[MIT License](LICENSE) © 2025 Oleksii Kolomiiets
+[MIT License](LICENSE)
